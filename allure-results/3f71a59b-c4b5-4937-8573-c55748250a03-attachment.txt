@@ -1,0 +1,3 @@
+new Tab title: Learn Automation Courses
+new Tab URL: https://freelance-learn-automation.vercel.app/category/manage
+Category name updated
