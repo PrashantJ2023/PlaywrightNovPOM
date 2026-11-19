@@ -15,5 +15,7 @@ test('Application login',async ({loginPage})=>
     console.log(await loginPage.getPageURL());
 
     await loginPage.assertUrlNotContains('/login/') 
+
+    await loginPage.logoutApplication()
         
 })

@@ -45,5 +45,11 @@ export class LoginPage extends BasePage
         await this.enterPassword(password)
         await this.clickSignin()
     }
+     
+   async logoutApplication()
+    {
+        await this.page.locator("//img[@alt='menu']").click()
+        await this.page.getByText("Sign out").click()
+    }
 
 }

@@ -60,5 +60,6 @@ export class DashBoardPage extends BasePage
     {
         await this.cartbutton.click()
     }
-
+    
+    
  }

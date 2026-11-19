@@ -79,9 +79,11 @@ export class BasePage
 
     async switchToMainPage()
     {
-        const pages=this.page.content().pages()
+        const pages=this.page.context().pages()
         await this.page.close()
         await pages[0].bringToFront()
 
     }
+
+    
 }

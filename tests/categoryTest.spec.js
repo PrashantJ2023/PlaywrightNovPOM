@@ -4,8 +4,10 @@ import { dashBoardPage } from '../Fixtures/fixtures.js'
 import {loginPage} from '../Fixtures/fixtures.js'
 import { credentials } from '../TestData/credentials'
 
+
 test.describe('Manage category functionality',async =>
 {
+  
   test('Add Category',async ({loginPage,dashBoardPage})=>
 {    
         let categoryName=`Playwright_${Date.now()}`
@@ -20,6 +22,11 @@ test.describe('Manage category functionality',async =>
     await categoryPage.deleteCategory(categoryName)    
 
     await categoryPage.validateDeletedCategory(categoryName)
+
+    await categoryPage.switchToMainPage() 
+     
+    await loginPage.logoutApplication()
+    
 })
 
 })

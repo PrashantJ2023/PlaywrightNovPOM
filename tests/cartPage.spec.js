@@ -26,6 +26,11 @@ test.describe('Managing Cart functionality', async()=>
         await cartPage.enrollClickEnrollnowButton()
 
         console.log(await cartPage.captureOrderID());
+         
+        await cartPage.clickCancelEnroll()
+        
+
+        await loginPage.logoutApplication()
         
        
         

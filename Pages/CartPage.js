@@ -49,6 +49,7 @@ export class CartPage extends BasePage
     async enrollClickEnrollnowButton()
     {
         await this.enrollNowEnrollNum.click()
+        
     }
     
     async captureOrderID()
@@ -56,6 +57,11 @@ export class CartPage extends BasePage
       const orderID= await this.enrollOrderID.innerText()
       console.log(orderID);
       return orderID
-    }
 
+    }
+     
+    async clickCancelEnroll()
+    {
+    await this.page.getByRole('button',{name:'Cancel'}).click()
+    }  
 }

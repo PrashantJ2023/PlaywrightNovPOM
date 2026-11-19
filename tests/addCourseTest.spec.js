@@ -33,5 +33,7 @@ test('Add course', async ({coursePage,loginPage,dashBoardPage})=>
     await coursePage.selectCourseNameCheckbox(courseName)
     await coursePage.deleteButton(courseName)
     
-    await coursePage.validateCourseName(courseName)
+    await coursePage.validateCourseName(courseName) 
+
+    await loginPage.logoutApplication()
 })
