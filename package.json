@@ -6,7 +6,6 @@
   "scripts": {
     "test": "npx playwright test --headed --project=firefox"
   },
-
   "keywords": [],
   "author": "",
   "license": "ISC",
