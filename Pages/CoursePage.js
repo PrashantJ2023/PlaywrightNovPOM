@@ -68,7 +68,7 @@ import { BasePage } from "./BasePage";
         for(const day of days)
         {
             const text = await day.textContent()
-            if(text.trim() === "20")
+            if(text.trim() === "30")
             {
                 await day.click()
                 break
